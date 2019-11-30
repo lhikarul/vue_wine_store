@@ -2,7 +2,7 @@
   <div class="items">
       <div class="item">
           <div class="img-wrapper">
-              <img src="https://digitalcontent.api.tesco.com/v1/media/ghs/snapshotimagehandler_79244801.jpeg?h=540&w=540" alt="wine pic">
+              <img src="https://images.unsplash.com/photo-1568623269068-c31912c211d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="wine pic">
           </div>
           <div class="item-info">
               <h3 class="item-info-name">Tesco Bordeaux</h3>
@@ -53,12 +53,12 @@ export default {
                 }
 
                 &-name {
-                    flex: 0 0 183px;
+                    flex: 0 0 58%;
                     border-right: 1px solid #EAF0ED;
                 }
 
                 &-price {
-                    flex: 0 0 133.35px;
+                    flex: 0 0 42%;
                     font-weight: 900;
                 }
 
