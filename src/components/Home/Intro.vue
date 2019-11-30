@@ -45,7 +45,6 @@ export default {
         &-item {
             .img-wrapper {
                 display: block;
-                max-width: 375px;
                 width: 100%;
             }
 
@@ -56,7 +55,6 @@ export default {
 
         .item-text-wrapper {
             padding: 30px;
-            background: #EAF0ED;
             color: #8DA291;
             line-height: 1.5;
 
@@ -64,6 +62,46 @@ export default {
                 margin-top: 30px;
             }
         }
+    }
 
+    @media (min-width: 576px) {
+        .intro {
+            &-item {
+                margin: 0 auto;
+                max-width: 540px;
+            }
+        }
+    }
+
+    @media (min-width: 940px) {
+        .intro {
+            &-item {
+                width: 100%;
+                max-width: none;
+                display: flex;
+
+                .img-wrapper {
+                    margin-top: -20px;
+
+                    img {
+                        display: block;
+                        width: 460px;
+                        height: 460px;
+                    }
+                }
+
+                .item-text-wrapper {
+                    box-sizing: border-box;
+                    padding: 70px 35px;
+                    height: 420px;
+                    line-height: 2;
+                    writing-mode: vertical-rl;
+
+                    .item-text:last-child {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
     }
 </style>
