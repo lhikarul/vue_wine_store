@@ -22,14 +22,13 @@ export default {
 
 <style lang="scss" scoped>
     .list-wrapper {
+        height: 180px;
         display: flex;
-        align-items: center;
         justify-content: space-between;
         
         .list-item {
 
             flex: 1;
-            height: 180px;
             position: relative;
 
             &:after {
@@ -70,6 +69,7 @@ export default {
             }
 
             &-2 {
+                 border-right: 1px solid #fff;
                  background: url(https://colorlib.com/preview/theme/wines/images/wine_2.png) no-repeat center center;
             }
 
@@ -82,5 +82,15 @@ export default {
             }
             
         }
+    }
+
+    @media (min-width: 768px) {
+
+        .list-wrapper {
+            margin: 0 auto;
+            max-width: 780px;
+            height: 256px;
+        }
+
     }
 </style>
